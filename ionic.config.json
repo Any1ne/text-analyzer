@@ -1,7 +1,0 @@
-{
-  "name": "text-analyzer",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
