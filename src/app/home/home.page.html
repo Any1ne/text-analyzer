@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Аналіз тексту</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="textForm" (ngSubmit)="analyze()">
+    <ion-item>
+      <ion-label position="stacked">Введіть текст</ion-label>
+      <ion-textarea
+        [formControl]="textControl"
+        autoGrow="true"
+        rows="6"
+        placeholder="Вставте або введіть текст для аналізу"
+      ></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Аналізувати</ion-button>
+  </form>
+
+  <app-result [words]="resultWords"></app-result>
+</ion-content>
